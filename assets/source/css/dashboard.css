@@ -1,0 +1,732 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+
+
+/* Grade de Jogos */
+
+
+
+
+option {
+    font-weight: bold;
+}
+
+/*  */
+
+body {
+    background: var(--background);
+}
+
+/* DASHBOARD (MOBILE) */
+@media (min-width: 0px) {
+
+    /* HEADER MOBILE */
+    .header-container {
+        background-color: var(--background-container);
+        display: flex;
+        justify-content: center;
+        padding: .5rem 0;
+    }
+
+    #header-logo {
+        width: 200px;
+        padding: 1rem 0;
+    }
+
+    /* WELCOME MOBILE */
+    .welcome-container {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 1rem;
+        color: var(--text);
+    }
+
+    /* BANNER MOBILE */
+    .upsell-title {
+
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+
+    #upsell,
+    #upsell2,
+    #upsell3 {
+        font-family: "Poppins", sans-serif;
+        background-size: 100%;
+        background-color: var(--cor-container-theme-1);
+        border-radius: 5px;
+        margin: 0 1rem;
+        padding: 1rem;
+        color: var(--text);
+        text-align: start;
+        border: 3px solid var(--background-container);
+        
+    }
+
+    #upsell {
+        background-image: url(../img/banners/banner1.webp);
+    }
+
+    #upsell2 {
+        background-image: url(../img/banners/banner2.webp);
+    }
+
+    #upsell3 {
+        background-image: url(../img/banners/banner3.webp);
+    }
+
+    .upsell-button {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--background-container);
+        color: var(--text);
+        font-weight: bold;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: .5rem .5rem;
+        text-align: center;
+        width: 150px;
+        margin-top: 1rem;
+        border: none;
+    }
+
+    .upsell-button3 {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: .5rem .5rem;
+        text-align: center;
+        width: 150px;
+        margin-top: 1rem;
+        border: none;
+        background-color: #ccc; /* Cor de fundo quando desativado */
+        color: #666; /* Cor do texto quando desativado */
+        cursor: not-allowed; /* Altera o cursor para indicar que o botão está desativado */
+    }
+
+    /* LAST WINNERS MOBILE */
+    .info p:nth-child(2) {
+        color: #28A745;
+    }
+
+    /* .info p:nth-child(4) {
+    } */
+
+    #container-latest-winners {
+        overflow: hidden;
+        margin: 1rem;
+        background-color: var(--background-container);
+        font-weight: bold;
+        border-radius: 5px;
+        border: 3px solid var(--background-container);
+    }
+
+    .container-latest-winners-title {
+        text-align: center;
+        font-weight: bold;
+        color: var(--text);
+        padding: .5rem .5rem;
+        align-items: center;
+    }
+
+    #slides {
+        display: flex;
+        transition: transform 2s ease-in-out;
+    }
+
+    .slide {
+        padding: .5rem 0;
+        background-color: var(--background);
+        border-radius: 5px;
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .info {
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+    }
+
+    .categories {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .category-select-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #category-select {
+        font-weight: bold;
+        width: 100%;
+        border: 1px solid var(--background-container);
+        border-radius: 5px;
+        padding: .5rem .5rem;
+        background-image: url('https://cdn.discordapp.com/attachments/1186469880472551474/1189520082020335616/Sem_Titulo-3_copiar.png?ex=659e75e7&is=658c00e7&hm=3d65c2e7dc3c4063be4202247011c5fe2ae10665af054218daf6f865ce756d94&');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        padding-right: 30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--background-container);
+        color: var(--text);
+        font-family: "Poppins", sans-serif;
+    }
+
+
+    .game-card {
+        display: none;
+    }
+
+    /* GAMES */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        line-height: 0;
+    }
+
+
+    .grid-game-title {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: var(--text);
+        font-size: 1.5rem;
+    }
+
+    .grid-item {
+        border-radius: 10px;
+        text-align: center;
+        background-color: var(--background-container);
+        border: 3px solid var(--background-container);
+    }
+
+    .grid-game-img {
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .grid-game-name {
+        text-wrap: nowrap;
+        font-weight: bold;
+        color: var(--text);
+        display: flex;
+        padding: 1rem .5rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* APLICATIVO MOBILE */
+    .aplicativo-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contato-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .aplicativo-description {
+        margin-bottom: 1rem;
+    }
+
+    #aplicativo {
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--text);
+        background-color: var(--background-container);
+        border-radius: 10px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    /* CONTATO MOBILE */
+    #contato {
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--cor-do-texto);
+        background-color: var(--background-container);
+        color: var(--text);
+        border-radius: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #direitos-autorais {
+        color: white;
+        padding: 1rem;
+        font-weight: bold;
+        background-color: var(--background-container);
+        color: var(--text);
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .faq {
+        margin: 1rem;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    /* FAQ */
+    details {
+
+        min-height: 5px;
+        max-width: 700px;
+        padding: 45px 70px 45px 45px;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 10px;
+        box-sizing: border-box;
+        transition: all .3s;
+        font-weight: bold;
+
+    }
+
+    details+details {
+        margin-top: 20px;
+    }
+
+    details[open] {
+        padding: .5rem;
+        font-weight: bold;
+        background-color: var(--background-container);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+        border-radius: 10px;
+
+    }
+
+    details p {
+        color: darkgrey;
+        font-weight: 300;
+        text-align: start;
+        position: relative;
+        left: .5rem;
+    }
+
+    .sumary-style {
+        font-weight: bold;
+        color: var(--text);
+        padding: 0 .5rem;
+    }
+
+    summary {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    summary:focus {
+        outline: none;
+
+    }
+
+    summary:focus::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    summary::-webkit-details-marker {
+        display: none
+    }
+
+    .control-icon {
+        fill: var(--text);
+        transition: .3s ease;
+        pointer-events: none;
+    }
+
+    .control-icon-close {
+        display: none;
+    }
+
+    details[open] .control-icon-close {
+        display: initial;
+        transition: .3s ease;
+    }
+
+    details[open] .control-icon-expand {
+        display: none;
+    }
+
+    /* ICON APP */
+    .pix-icon {
+        position: relative;
+        top: 2px;
+        width: 15px;
+    }
+}
+
+
+/* DASHBOARD (DESKTOP) */
+@media (min-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        background-color: var(--background-container);
+    }
+
+    #header-logo {
+        width: 200px;
+        padding: 1rem 0;
+    }
+
+    #plataforma {
+        font-size: 1.5rem;
+        width: 500px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #category-select {
+        font-weight: bold;
+        width: 800px;
+        border: 1px solid var(--background-container);
+        border-radius: 5px;
+        padding: .5rem .5rem;
+        background-image: url('https://cdn.discordapp.com/attachments/1186469880472551474/1189520082020335616/Sem_Titulo-3_copiar.png?ex=659e75e7&is=658c00e7&hm=3d65c2e7dc3c4063be4202247011c5fe2ae10665af054218daf6f865ce756d94&');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        padding-right: 30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--background-container);
+        color: var(--text);
+        font-family: "Poppins", sans-serif;
+    }
+
+    .grid-container {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        width: 800px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        line-height: 0;
+    }
+
+    #upsell,
+    #upsell2,
+    #upsell3 {
+        width: 770px;
+        height: 150px;
+        background-size: 100%;
+        background-color: var(--cor-container-theme-1);
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 1rem;
+        color: var(--text);
+        text-align: start;
+        border: 3px solid var(--background-container);
+    }
+
+    #container-latest-winners {
+        width: 800px;
+        overflow: hidden;
+        margin: 1rem auto;
+        background-color: var(--background-container);
+        font-weight: bold;
+        border-radius: 5px;
+        border: 3px solid var(--background-container);
+    }
+
+    #aplicativo {
+        width: 770px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    #contato {
+        width: 770px;
+        margin: 0 auto;
+    }
+
+    .faq {
+        display: none;
+        margin: 1rem auto;
+        justify-content: center;
+
+    }
+
+    #direitos-autorais {
+        margin-top: 1rem;
+    }
+
+    details[open] {
+        width: 100%;
+        padding: .5rem;
+        font-weight: bold;
+        background-color: var(--background-container);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+        border-radius: 10px;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ICONES */
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.bi-person-fill {
+    padding: .2rem .5rem;
+    border-radius: 10px;
+    color: var(--text);
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-person-circle {
+    padding: .2rem .5rem;
+    border-radius: 10px;
+    color: var(--text);
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-apple {
+    color: var(--text);
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-google-play {
+    color: var(--text);
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-arrow-left-circle-fill {
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    color: var(--text);
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-instagram {
+    color: var(--text);
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+.grid-item2 {
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--background-container);
+    border: 3px solid var(--background-container);
+}

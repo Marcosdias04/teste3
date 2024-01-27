@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune-Mouse</title>
+    <meta name="description" content="Fortune-Mouse: Jogue e aposte como um profissional.">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/source/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/source/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/source/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/source/img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/source/css/game.css">
+    <link rel="stylesheet" href="assets/source/css/cores.css">
+</head>
+<style>
+    .chat-image {
+    display: none;
+}
+</style>
+
+<body>
+    <header class="header-container">
+        <button><a href="index.html"><i class="bi bi-arrow-left-circle-fill"></i></a></button>
+        <img id="header-logo" src="#" alt="Logo">
+        <button><i class="bi-person-circle"></i></button>
+    </header>
+
+    <main>
+        <!-- HISTORY -->
+        <div class="history-green-red">
+        </div>
+        </section>
+
+        <!-- CHAT APP -->
+        <section class="container-chat-app">
+            <div class="analystic">
+                <img class="chat-img" src="assets/source/img/giphy.gif" alt="Buddy">
+            </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat" id="chat">
+                    <div class="message-container">
+                        <p>Relaxe, respire fundo e prepare-se para apostar como profissional!</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="pulsating-button" id="generateButton" onclick="generateMessages()">GERAR SINAL COM IA
+                <div id="countdown-container">
+                </div>
+            </button>
+        </section>
+
+        <section>
+            <iframe id="meuIframe" src="" class="plataform"></iframe>
+        </section>
+
+        <!-- APLICATIVO -->
+        <section id="aplicativo">
+            <h2 class="aplicativo-title">Aplicativos</h2>
+            <p class="aplicativo-description">Baixe agora em seu Iphone ou Android</p>
+            <div>
+                <button> <i class="bi-apple"></i></button>
+                <button> <i class="bi-google-play"></i></button>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <h2 class="contato-title">CONTATO</h2>
+            <p class="contato-description">Entre em contato conosco através do nosso Instagram!</p>
+            <a href="" id="instagram-link" target="_blank"><br>
+                <i class="bi-instagram"></i>
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p id="direitos-autorais">&copy;<br> All rights reserved <br></p>
+    </footer>
+
+    <!-- ÁUDIO -->
+    <div id="audioContainer">
+        <audio id="notificationSound" src="assets/source/sound/green.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="assets/source/scripts/style.js"></script>
+    <script src="assets/source/scripts/fortune-tiger.js"></script>
+</body>
+</html>

@@ -1,0 +1,698 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+/* DASHBOARD (MOBILE) */
+@media (min-width: 0px) {
+
+    body {
+        background: var(--background);
+        
+    }
+
+    /* HEADER MOBILE */
+    .header-container {
+        background-color: var(--background-container);
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-around;
+        padding: .5rem 0;
+    }
+
+    #header-logo {
+        width: 200px;
+        padding: 1rem 0;
+    }
+
+    /* WELCOME MOBILE */
+    .welcome-container {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 1rem;
+        color: var(--text);
+    }
+
+    /* BANNER MOBILE */
+    .upsell-title {
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+
+    #upsell,
+    #upsell2,
+    #upsell3 {
+        background-size: 100%;
+        background-color: var(--cor-container-theme-1);
+        border-radius: 5px;
+        margin: 0 1rem;
+        padding: 1rem;
+        color: var(--text);
+        text-align: start;
+        border: 3px solid var(--background-container);
+    }
+
+    #upsell {
+        background-image: url(assets/source/img/banner1.webp);
+    }
+
+    #upsell2 {
+        background-image: url(assets/source/img/banner2.webp);
+    }
+
+    #upsell3 {
+        background-image: url(assets/source/img/banner3.webp);
+    }
+
+    .upsell-button {
+        background-color: var(--background-container);
+        color: var(--text);
+        font-weight: bold;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: .5rem .5rem;
+        text-align: center;
+        width: 150px;
+        margin-top: 1rem;
+        border: none;
+    }
+
+    /* LAST WINNERS MOBILE */
+    .info p:nth-child(2) {
+        color: #28A745;
+    }
+
+    .info p:nth-child(4) {
+        margin-bottom: 1rem;
+    }
+
+    #container-latest-winners {
+        overflow: hidden;
+        margin: 1rem;
+        background-color: var(--background-container);
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .container-latest-winners-title {
+        text-align: center;
+        font-weight: bold;
+        color: var(--text);
+        padding: .8rem .5rem;
+        align-items: center;
+    }
+
+    #slides {
+        display: flex;
+        transition: transform 2s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .info {
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+    }
+
+    /* GAMES */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        line-height: 0;
+    }
+
+
+    .grid-game-title {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: var(--text);
+        font-size: 1.5rem;
+    }
+
+    .grid-item {
+        border-radius: 10px;
+        text-align: center;
+        background-color: var(--background-container);
+        border: 3px solid var(--background-container);
+    }
+
+    .grid-game-img {
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .grid-game-name {
+        font-weight: bold;
+        color: var(--text);
+        display: flex;
+        padding: 1rem .5rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* APLICATIVO MOBILE */
+    .aplicativo-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .aplicativo-description {
+        margin-bottom: 1rem;
+    }
+
+    #aplicativo {
+        width: 310px;
+        margin: 1.2rem auto;
+        padding: 1rem;
+        color: var(--text);
+        background-color: var(--background-container);
+        border-radius: 10px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    /* CONTATO DESKTOP */
+    .contato-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    #contato {
+        width: 310px;
+        padding: 1rem;
+        margin: 1.2rem auto;
+        color: var(--cor-do-texto);
+        background-color: var(--background-container);
+        color: var(--text);
+        border-radius: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #direitos-autorais {
+        color: white;
+        padding: 1rem;
+        font-weight: bold;
+        background-color: var(--background-container);
+        color: var(--text);
+        text-align: center;
+    }
+
+    .faq {
+        margin: 1rem;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    /* FAQ */
+    details {
+        min-height: 5px;
+        max-width: 700px;
+        padding: 45px 70px 45px 45px;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 15px;
+        box-sizing: border-box;
+        transition: all .3s;
+        font-weight: bold;
+    }
+
+    details+details {
+        margin-top: 20px;
+    }
+
+    details[open] {
+        font-weight: bold;
+        min-height: 50px;
+        padding: 1.2rem;
+        background-color: var(--background-container);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+    }
+
+    details p {
+        color: var(--text);
+        font-weight: 300;
+    }
+
+    .sumary-style {
+        font-weight: bold;
+        color: white;
+    }
+
+    summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    summary:focus {
+        outline: none;
+    }
+
+    summary:focus::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    summary::-webkit-details-marker {
+        display: none
+    }
+
+    .control-icon {
+        fill: white;
+        transition: .3s ease;
+        pointer-events: none;
+    }
+
+    .control-icon-close {
+        display: none;
+    }
+
+    details[open] .control-icon-close {
+        display: initial;
+        transition: .3s ease;
+    }
+
+    details[open] .control-icon-expand {
+        display: none;
+    }
+
+    /* MENU */
+    #menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        left: 40px;
+    }
+
+    .history-green-red {
+        height: 15px;
+        display: flex;
+        width: 340px;
+        border-radius: 10px 10px 0px 0px;
+        background-color: rgb(0, 0, 0);
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .chat-img {
+        margin-top: .5rem;
+        width: 50px;
+    }
+
+    .chat-img-container {
+        padding-right: .3rem;
+        align-items: center;
+        display: flex;
+    }
+
+    .plataform {
+        width: 340px;
+        height: 600px;
+        display: flex;
+        margin: 1rem auto;
+        border-radius: 20px;
+        border: solid 3px var(--cor-da-borda);
+        background-color: var(--cor-background-plataform);
+    }
+
+    .principal {
+        background-color: blue;
+    }
+
+    .analystic {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        width: 340px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .container-chat-app {
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        width: 340px;
+        margin: 0 auto;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .teste {
+        color: white;
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: .3rem;
+    }
+
+    .square {
+        margin: 0 .1rem;
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+        flex-shrink: 0;
+    }
+
+    .history-green-red.slide {
+        margin-left: 0;
+    }
+
+    .chat-name {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+    
+    .chat-image img {
+        padding: .2rem .2rem;
+        margin: 0rem 1rem;
+        border-radius: 5px;
+    }
+
+    .message-container {
+        background-color: black;
+        color: white;
+        margin: .5rem 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: .5rem 1rem;
+    }
+
+    .message {
+        background-color: black;
+        color: white;
+        margin: 0rem 1rem;
+                margin-bottom: .5rem;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: .5rem;
+        padding: .8rem 1rem;
+    }
+
+    #generateButton {
+        width: 310px;
+        margin: 0 auto;
+        margin-top: .3rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        cursor: pointer;
+        background-color: #00ab06;
+        box-shadow: 0 0 10px #00ab06;
+        color: white;
+        padding: .5rem;
+        justify-content: center;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-bottom: .3rem;
+    }
+
+    .pulsating-button:enabled {
+        cursor: pointer;
+        animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(0.95);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #generateButton:disabled {
+        box-shadow: 0 0 10px #666666;
+        background-color: #cccccc;
+        color: #666666;
+        cursor: not-allowed;
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 0rem;
+        width: 340px;
+    }
+
+    .pix-icon {
+        position: relative;
+        top: 2px;
+        width: 15px;
+    }
+}
+
+/* DASHBOARD (DESKTOP) */
+@media (min-width: 768px) {
+    .header-container {
+        background-color: var(--background-container);
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-around;
+        padding: .5rem 0;
+    }
+
+    #header-logo {
+        width: 200px;
+        padding: 1rem 0;
+    }
+
+    /* WELCOME MOBILE */
+    .welcome-container {
+        text-align: center;
+        font-weight: bold;
+        padding: 1rem;
+        color: var(--text);
+    }
+}
+
+/* ICONES */
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.bi-person-fill {
+    padding: .2rem .5rem;
+    border-radius: 10px;
+    color: var(--text);
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-person-circle {
+    padding: .2rem .5rem;
+    border-radius: 10px;
+    color: var(--text);
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-apple {
+    color: var(--text);
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-google-play {
+    color: var(--text);
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-arrow-left-circle-fill {
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    color: var(--text);
+    z-index: 1;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.bi-instagram {
+    color: var(--text);
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

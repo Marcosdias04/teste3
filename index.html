@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADRÕES DE CASSINO</title>
+    <meta name="description" content="APLICATIVO COM 98% DE ASSERTIVIDADE">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/source/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/source/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/source/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/source/img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/source/css/dashboard.css">
+    <link rel="stylesheet" href="assets/source/css/cores.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-container">
+        <img id="header-logo" src="#" alt="Logo">
+    </header>
+
+    <main>
+        <!-- WELCOME -->
+        <section class="welcome-container">
+            <h1 id="plataforma"></h1>
+        </section>
+
+        <!-- BANNER -->
+        <section class="banner-container">
+            <!-- B1 -->
+            <div class="mySlides fade">
+                <div id="upsell">
+                    <h2 class="upsell-title">GRUPO VIP</h2>
+                    <p class="upsell-description">Prepare-se para aprimorar sua experiência de apostas</p>
+                    <!-- <a href="#" target="_blank"><button class="upsell-button">TELEGRAM</button></a> -->
+                </div>
+            </div>
+            <!-- B2 -->
+            <div class="mySlides fade">
+                <div id="upsell2">
+                    <h2 class="upsell-title">Vamos lá!</h2>
+                    <p class="upsell-description">Me acompanhe no Instagram e aumente suas chances de ganhar</p>
+                    <!-- <a href="#" target="blank"><button class="upsell-button">INSTAGRAM</button></a> -->
+                </div>
+            </div>
+            <!-- B3 -->
+            <div class="mySlides fade">
+                <div id="upsell3">
+                    <h2 class="upsell-title">Maximize sua sorte!</h2>
+                    <p class="upsell-description">Aumente seu plano para ampliar suas chances de vitória</p>
+                    <!-- <button class="upsell-button3">EM BREVE</button> -->
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- LASTEST WINNERS -->
+        <section id="container-latest-winners">
+            <h2 class="container-latest-winners-title">ÚLTIMOS GANHADORES</h2>
+            <div id="slides"></div>
+        </section>
+
+        <!-- CATEGORIAS -->
+        <h3 class="grid-game-title">REALSBET</h3>
+
+        <!-- GAMES -->
+        <section class="games" id="games-section">
+            <section class="categories">
+                <select id="category-select">
+                    <option value="all">TODOS OS JOGOS</option>
+                    <option value="Populares">POPULARES</option>
+                    <option value="Slots">SLOTS</option>
+                    <option value="Roulette">ROLETA</option>
+                    <option value="Ao vivo">AO VIVO</option>
+                </select>
+            </section>
+
+            <div class="grid-container">
+                <div class="game-card" data-category="Casino">
+                </div>
+
+                <!-- FORTUNE TIGER -->
+                <div class="grid-item" data-category="Slots">
+                    <div>
+                        <h1 class="grid-game-name">FORTUNE TIGER</h1>
+                    </div>
+                    <div>
+                        <a href="fortune-tiger.html">
+                            <img class="grid-game-img" src="assets/source/img/games/fortune-tiger.webp"
+                                alt="Fortune Tiger Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FORTUNE RABBIT -->
+                <div class="grid-item" data-category="Slots">
+                    <div>
+                        <h1 class="grid-game-name">FORTUNE RABBIT</h1>
+                    </div>
+                    <div>
+                        <a href="fortune-rabbit.html">
+                            <img class="grid-game-img" src="assets/source/img/games/fortune-rabbit.webp"
+                                alt="Fortune Rabbit Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FORTUNE OX -->
+                <div class="grid-item" data-category="Slots">
+                    <div>
+                        <h1 class="grid-game-name">FORTUNE OX</h1>
+                    </div>
+                    <div>
+                        <a href="fortune-ox.html">
+                            <img class="grid-game-img" src="assets/source/img/games/fortune-ox.webp"
+                                alt="Fortune Ox Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FORTUNE MOUSE -->
+                <div class="grid-item" data-category="Slots">
+                    <div>
+                        <h1 class="grid-game-name">FORTUNE MOUSE</h1>
+                    </div>
+                    <div>
+                        <a href="fortune-mouse.html">
+                            <img class="grid-game-img" src="assets/source/img/games/fortune-mouse.webp"
+                                alt="Fortune Mouse Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FORTUNE TREE -->
+                <div class="grid-item" data-category="Slots">
+                    <div>
+                        <h1 class="grid-game-name">FORTUNE TREE</h1>
+                    </div>
+                    <div>
+                        <a href="fortune-tree.html">
+                            <img class="grid-game-img" src="assets/source/img/games/fortune-tree.webp"
+                                alt="Fortune Tree Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AVIATOR -->
+                <div class="grid-item" data-category="Populares">
+                    <div>
+                        <h1 class="grid-game-name">AVIATOR</h1>
+                    </div>
+                    <div>
+                        <a href="aviator.html">
+                            <img class="grid-game-img" src="assets/source/img/games/aviator.webp" alt="Aviator Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SPACEMAN -->
+                <div class="grid-item" data-category="Populares">
+                    <div>
+                        <h1 class="grid-game-name">SPACEMAN</h1>
+                    </div>
+                    <div>
+                        <a href="spaceman.html">
+                            <img class="grid-game-img" src="assets/source/img/games/spaceman.webp" alt="Spaceman Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NINJA CRASH -->
+                <div class="grid-item" data-category="Populares">
+                    <div>
+                        <h1 class="grid-game-name">NINJA CRASH</h1>
+                    </div>
+                    <div>
+                        <a href="ninja-crash.html">
+                            <img class="grid-game-img" src="assets/source/img/games/ninja-crash.webp"
+                                alt="Ninja Crash Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MINES -->
+                <div class="grid-item" data-category="Populares">
+                    <div>
+                        <h1 class="grid-game-name">MINES</h1>
+                    </div>
+                    <div>
+                        <a href="mines.html">
+                            <img class="grid-game-img" src="assets/source/img/games/mines.webp" alt="Mines Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PENALTY -->
+                <div class="grid-item" data-category="Populares">
+                    <div>
+                        <h1 class="grid-game-name">PENALTY</h1>
+                    </div>
+                    <div>
+                        <a href="penalty.html">
+                            <img class="grid-game-img" src="assets/source/img/games/penalty.webp" alt="Penalty Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BAC BO -->
+                <div class="grid-item" data-category="Ao vivo">
+                    <div>
+                        <h1 class="grid-game-name">BAC BO</h1>
+                    </div>
+                    <div>
+                        <a href="bacbo.html">
+                            <img class="grid-game-img" src="assets/source/img/games/bacbo.webp" alt="Bac Bo Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DOUBLE -->
+                <div class="grid-item" data-category="Populares">
+                    <div>
+                        <h1 class="grid-game-name">DOUBLE</h1>
+                    </div>
+                    <div>
+                        <a href="double.html">
+                            <img class="grid-game-img" src="assets/source/img/games/double.webp" alt="Double Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROULETTE PRAGMATIC -->
+                <div class="grid-item" data-category="Roulette">
+                    <div>
+                        <h1 class="grid-game-name">PRAGMATIC</h1>
+                    </div>
+                    <div>
+                        <a href="roulette-pragmatic.html">
+                            <img class="grid-game-img" src="assets/source/img/games/roullete.webp" alt="Roullete Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROULETTE PLAY TECH -->
+                <div class="grid-item" data-category="Roulette">
+                    <div>
+                        <h1 class="grid-game-name">PLAYTECH</h1>
+                    </div>
+                    <div>
+                        <a href="roulette-playtech.html">
+                            <img class="grid-game-img" src="assets/source/img/games/roullete.webp" alt="Roullete Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARDS -->
+                <div class="grid-item" data-category="Ao vivo">
+                    <div>
+                        <h1 class="grid-game-name">CARDS</h1>
+                    </div>
+                    <div>
+                        <a href="cards.html">
+                            <img class="grid-game-img" src="assets/source/img/games/cards.webp" alt="Cards Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DRAGON TIGER -->
+                <div class="grid-item" data-category="Ao vivo">
+                    <div>
+                        <h1 class="grid-game-name">DRAGON TIGER</h1>
+                    </div>
+                    <div>
+                        <a href="dragon-tiger.html">
+                            <img class="grid-game-img" src="assets/source/img/games/dragon-tiger.webp"
+                                alt="Dragon Tiger Game">
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- PP -->
+        <section>
+            <h3 class="grid-game-title">PLAYPIX</h3>
+            <div class="grid-container">
+                <div class="game-card">
+                </div>
+
+                <!-- Ninja Fruits -->
+                <div class="grid-item2">
+                    <div>
+                        <h1 class="grid-game-name">NINJA FRUITS</h1>
+                    </div>
+                    <div>
+                        <a href="ninja-fruits.html">
+                            <img class="grid-game-img" src="assets/source/img/games/ninja-fruits.webp"
+                                alt="Ninja Fruits Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Crazy Poki -->
+                <div class="grid-item2">
+                    <div>
+                        <h1 class="grid-game-name">CRAZY POKI</h1>
+                    </div>
+                    <div>
+                        <a href="crazy-poki.html">
+                            <img class="grid-game-img" src="assets/source/img/games/crazy-poki.webp"
+                                alt="Crazy Poki Game">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROLETA BRASILEIRA -->
+                <div class="grid-item2">
+                    <div>
+                        <h1 class="grid-game-name">ROLETA BR</h1>
+                    </div>
+                    <div>
+                        <a href="roulette-brasileira.html">
+                            <img class="grid-game-img" src="assets/source/img/games/roleta-brasileira.webp"
+                                alt="Roleta Brasileira Game">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APLICATIVO -->
+        <section id="aplicativo">
+            <h4 class="aplicativo-title">Aplicativos</h4>
+            <p class="aplicativo-description">Baixe agora em seu Iphone ou Android</p>
+
+            <div>
+                <button> <i class="bi-apple"></i>
+                    <button> <i class="bi-google-play"></i>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <h5 class="contato-title">CONTATO</h5>
+            <p class="contato-description">Entre em contato conosco através do nosso Instagram!</p>
+            <button>
+                <!-- URL INSTAGRAM -->
+                <a href="" id="instagram-link" target="_blank"><br>
+                    <i class="bi-instagram"></i>
+                </a>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <symbol viewBox="0 0 24 24" id="expand-more">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </symbol>
+                    <symbol viewBox="0 0 24 24" id="close">
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </symbol>
+                </svg>
+            </div>
+
+            <details>
+                <summary class="sumary-style">
+                    Qual o valor do depósito mínimo?
+                    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                    </svg>
+                    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                    </svg>
+                </summary>
+                <p>REALSBET: R$10,00<br>PLAYPIX: R$30,00</p>
+            </details>
+
+            <details>
+                <summary class="sumary-style">
+                    Qual o valor do saque mínimo?
+                    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                    </svg>
+                    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                    </svg>
+                </summary>
+                <p>REALSBET: R$20,00<br>PLAYPIX: R$50,00</p>
+            </details>
+
+            <details>
+
+
+
+                <summary class="sumary-style">
+                    Tem barra de saque?
+                    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                    </svg>
+                    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                    </svg>
+                </summary>
+                <p>Não! você saca na hora via PIX <img class="pix-icon" src="assets/source/img/pix.png" alt="Pix"></p>
+            </details>
+
+            <details>
+
+                <summary class="sumary-style">
+                    O aplicativo funciona?
+                    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                    </svg>
+                    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                    </svg>
+                </summary>
+                <p>O aplicativo foi testado e otimizado pelos melhores desenvolvedorees do BRASIL.
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p id="direitos-autorais">&copy; developed by kkZ<br> All rights reserved <br></p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const categorySelect = document.getElementById('category-select');
+            const gamesSection = document.getElementById('games-section');
+            const gridItems = document.querySelectorAll('.grid-item');
+
+            categorySelect.addEventListener('change', filterGames);
+
+            function filterGames() {
+                const selectedCategory = categorySelect.value;
+
+                gridItems.forEach((item) => {
+                    const category = item.getAttribute('data-category');
+
+                    if (selectedCategory === 'all' || selectedCategory === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="assets/source/scripts/main.js"></script>
+    <script src="assets/source/scripts/style.js"></script>
+</body>
+
+</html>
